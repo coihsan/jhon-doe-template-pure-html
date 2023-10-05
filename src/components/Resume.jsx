@@ -1,7 +1,7 @@
 export default function Resume (){
     return (
-        <section class="resume-section section" id="Experience">
-        <div class="resume-container container">
+        <section className="resume-section section" id="Experience">
+        <div className="resume-container container">
             <div className="section-title" data-reveal="toUp">
                 <h3 className="title-section">My <span>Experiences</span></h3>
             </div>
@@ -35,7 +35,7 @@ export default function Resume (){
                 </div>
         
                 <div className="resume-timeline-box" data-reveal="toUp">
-                    <div class="resume-timeline-content">
+                    <div className="resume-timeline-content">
                         <div className="year"><i className='bx bx-calendar'></i> 2019 - 2020</div>
                         <h3>DataFusion</h3>
                         <h5>&mdash; Digital Marketing</h5>
@@ -44,7 +44,7 @@ export default function Resume (){
                 </div>
          
                 <div className="resume-timeline-box" data-reveal="toUp">
-                    <div class="resume-timeline-content">
+                    <div className="resume-timeline-content">
                         <div className="year"><i className='bx bx-calendar'></i> 2017 - 2019</div>
                         <h3>ByteWave Technologies</h3>
                         <h5>&mdash; Digital Marketing & Front-End Developer</h5>

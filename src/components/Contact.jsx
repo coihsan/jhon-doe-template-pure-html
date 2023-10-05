@@ -35,7 +35,7 @@ export default function Contact (){
                         </div>
                         <div className="social-link-footer" data-reveal="toUp">
                             <h4>Visite my social profile and get connected</h4>
-                            <div class="social-link-link">
+                            <div className="social-link-link">
                                 <a href=""><i className='bx bxl-instagram transition'></i></a>
                                 <a href=""><i className='bx bxl-linkedin-square transition'></i></a>
                                 <a href=""><i className='bx bxl-facebook-circle transition'></i></a>
@@ -60,7 +60,7 @@ export default function Contact (){
                         <br/>
                         <div className="input-group">
                              <input type="number" name="phonenumber" placeholder="+62 812 2345 6789"/><i className='bx bxs-phone' ></i>
-                             <label for="phonenumber" class="user-lable">Phone Number</label>
+                             <label for="phonenumber" className="user-lable">Phone Number</label>
                         </div>
                         <br/>
                        <div className="input-group">

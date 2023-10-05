@@ -6,7 +6,7 @@ export default function Navbar (){
         <nav className="navbar flex">
             <div className="avatar">
                 <img src="img/1690805230779.jpg" alt="avatar"/>
-                <h2>Jhon <span class="text-color">Doe</span></h2>
+                <h2>Jhon <span className="text-color">Doe</span></h2>
             </div>
             <div className="navmenu flex" id="sideNav">
                 <a href="#">Home</a>
@@ -15,10 +15,10 @@ export default function Navbar (){
                 <a href="#Experience">Experience</a>
                 <a href="#Projects">Projects</a>
                 <a href="#Contact">Contact</a>
-                <div class="social-link flex">
-                    <a href=""><i class='bx bxl-instagram'></i></a>
-                    <a href=""><i class='bx bxl-linkedin-square'></i></a>
-                    <a href=""><i class='bx bxl-facebook-circle'></i></a>
+                <div className="social-link flex">
+                    <a href=""><i className='bx bxl-instagram'></i></a>
+                    <a href=""><i className='bx bxl-linkedin-square'></i></a>
+                    <a href=""><i className='bx bxl-facebook-circle'></i></a>
                 </div> 
             </div>
             <div className="footerNav">

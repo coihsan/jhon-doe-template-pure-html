@@ -5,7 +5,7 @@ export default function Projects(){
             <div className="section-title" data-reveal="toUp">
                 <h3 className="title-section">My <span>Projects</span></h3>
             </div>
-            <div class="tab-galery">
+            <div className="tab-galery">
                 <div id="myBtnContainer">
                   <button className="btn active" onclick="filterSelection('all')"> Show all</button>
                   <button className="btn" onclick="filterSelection('Web')"> Web</button>

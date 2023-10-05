@@ -23,7 +23,7 @@ export default function Modal (){
                         <div className="table-isi">jhondoe@example.com</div>
                       </div>
                     </div>
-                    <div clasclassNames="personal-info-detail">
+                    <div className="personal-info-detail">
                       <div><i className='bx bxl-whatsapp' ></i></div>
                       <div className="personal-info-contain">
                         <div className="table-title">WhatsApp</div>
