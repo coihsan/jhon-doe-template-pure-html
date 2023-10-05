@@ -3,29 +3,29 @@
 {
     // blockcode sidenav
   
-  const checkbox = document.getElementById('toggle-menu');
-  const sidenav = document.querySelector('.navbar');
-  const overlay = document.querySelector('.navOverlay');
-  const slide = 'slide';
-  const active = 'active';
+//   const checkbox = document.getElementById('#toggle-menu');
+//   const sidenav = document.querySelector('.navbar');
+//   const overlay = document.querySelector('.navOverlay');
+//   const slide = 'slide';
+//   const active = 'active';
+
+//   checkbox.addEventListener('change', () => {
+//     if (checkbox.checked) {
+//       sidenav.classList.add(slide);
+//       overlay.classList.add(active);
+//     } else {
+//       sidenav.classList.remove(slide);
+//       overlay.classList.remove(active);
+//     }
+//   });
   
-  checkbox.addEventListener('change', () => {
-    if (checkbox.checked) {
-      sidenav.classList.add(slide);
-      overlay.classList.add(active);
-    } else {
-      sidenav.classList.remove(slide);
-      overlay.classList.remove(active);
-    }
-  });
-  
-  document.addEventListener('click', (event) => {
-    if (!event.target.closest('#toggle-menu')) {
-      checkbox.checked = false;
-      sidenav.classList.remove(slide);
-      overlay.classList.remove(active);
-    }
-  });
+//   document.addEventListener('click', (event) => {
+//     if (!event.target.closest('#toggle-menu')) {
+//       checkbox.checked = false;
+//       sidenav.classList.remove(slide);
+//       overlay.classList.remove(active);
+//     }
+//   });
   // end blockcode sidenav
   }
   
@@ -46,7 +46,7 @@
     greeting = "Evening!";
   }
   
-    document.getElementById('greeting').innerHTML = "Good " + greeting;
+    // document.getElementById('greeting').innerHTML = "Good " + greeting;
   
   // when user scroll and the header changing background color
   window.addEventListener("scroll", function() {
@@ -95,33 +95,33 @@
   const form = document.getElementById('myForm');
   const button = document.getElementById('submitButton');
   
-  document.getElementById('dataForm').addEventListener('input', function () {
-    if (this.value.trim() !== '') {
-      button.style.backgroundColor = '#EE4540' ;
-      button.style.color = '#fafafa';
-      button.style.textShadow = '1px 1px 5px rgba(0, 0, 0, 0.6)';
-    } else {
-      button.style.backgroundColor = ''; 
-    }
-  });
+//   document.getElementById('dataForm').addEventListener('input', function () {
+//     if (this.value.trim() !== '') {
+//       button.style.backgroundColor = '#EE4540' ;
+//       button.style.color = '#fafafa';
+//       button.style.textShadow = '1px 1px 5px rgba(0, 0, 0, 0.6)';
+//     } else {
+//       button.style.backgroundColor = ''; 
+//     }
+//   });
   
-  form.addEventListener('submit', function (event) {
-    event.preventDefault();
-  });
+//   form.addEventListener('submit', function (event) {
+//     event.preventDefault();
+//   });
   
   // TAB GALERY
   
   {
-    filterSelection("all")
-  function filterSelection(c) {
-    var x, i;
-    x = document.getElementsByClassName("column");
-    if (c == "all") c = "";
-    for (i = 0; i < x.length; i++) {
-      w3RemoveClass(x[i], "show");
-      if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
-    }
-  }
+//     filterSelection("all")
+//   function filterSelection(c) {
+//     var x, i;
+//     x = document.getElementsByClassName("column");
+//     if (c == "all") c = "";
+//     for (i = 0; i < x.length; i++) {
+//       w3RemoveClass(x[i], "show");
+//       if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+//     }
+//   }
   
   function w3AddClass(element, name) {
     var i, arr1, arr2;
@@ -144,15 +144,15 @@
   }
   
     // Add active class to the current button (highlight it)
-    var btnContainer = document.getElementById("myBtnContainer");
-    var btns = btnContainer.getElementsByClassName("btn");
-  for (var i = 0; i < btns.length; i++) {
-    btns[i].addEventListener("click", function(){
-      var current = document.getElementsByClassName("active");
-      current[0].className = current[0].className.replace(" active", "");
-      this.className += " active";
-    });
-  }
+//     var btnContainer = document.getElementById("myBtnContainer");
+//     var btns = btnContainer.getElementsByClassName("btn");
+//   for (var i = 0; i < btns.length; i++) {
+//     btns[i].addEventListener("click", function(){
+//       var current = document.getElementsByClassName("active");
+//       current[0].className = current[0].className.replace(" active", "");
+//       this.className += " active";
+//     });
+//   }
   
   }
   
@@ -162,22 +162,22 @@
   const modalImg = document.querySelector(".modal-content-img");
   const closeButton = document.querySelector(".close");
   
-  thumbnails.forEach(thumbnail => {
-    thumbnail.addEventListener("click", function() {
-      modal.classList.add("Isvisible");
-      modalImg.src = this.src;
-    });
-  });
+//   thumbnails.forEach(thumbnail => {
+//     thumbnail.addEventListener("click", function() {
+//       modal.classList.add("Isvisible");
+//       modalImg.src = this.src;
+//     });
+//   });
   
-  closeButton.addEventListener("click", function() {
-    modal.classList.remove("Isvisible")
-  });
+//   closeButton.addEventListener("click", function() {
+//     modal.classList.remove("Isvisible")
+//   });
   
-  window.addEventListener("click", function(event) {
-    if (event.target === modal) {
-      modal.classList.remove("Isvisible")
-    }
-  });
+//   window.addEventListener("click", function(event) {
+//     if (event.target === modal) {
+//       modal.classList.remove("Isvisible")
+//     }
+//   });
   
   
    
