@@ -6,6 +6,8 @@ import Index from './pages/index-projects.jsx'
 import './index.css'
 import './index.js'
 
+import ErrorPage from './error-page'
+
 import {
   createBrowserRouter,
   RouterProvider,
@@ -15,6 +17,7 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
+    errorElement: <ErrorPage />,
   },
   {
     path: "Blog",

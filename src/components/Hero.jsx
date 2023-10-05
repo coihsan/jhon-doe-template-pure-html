@@ -2,7 +2,7 @@ export default function Hero (){
     return (
         <section className="hero-section">
         <div className="hero-container">
-            <img className="avatar-hero" src="img/1690805230779.jpg" alt="avatar"/>
+            <img className="avatar-hero" src="https://coihsan.github.io/iseng/assets/1690805230779.webp" alt="avatar"/>
             <div className="hero-body-text">
                 <div className="text-float-hero">Hi, <span id="greeting"></span></div>
                 <h3 className="nameUser">I'm<span className="text-color"> Jhon Doe!</span></h3>

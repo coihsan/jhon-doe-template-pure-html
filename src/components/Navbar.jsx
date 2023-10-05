@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 export default function Navbar (){
     return (
         <header className="header flex">
@@ -15,6 +17,7 @@ export default function Navbar (){
                 <a href="#Experience">Experience</a>
                 <a href="#Projects">Projects</a>
                 <a href="#Contact">Contact</a>
+                <Link to={'/Blog'}>Blog</Link>
                 <div className="social-link flex">
                     <a href=""><i className='bx bxl-instagram'></i></a>
                     <a href=""><i className='bx bxl-linkedin-square'></i></a>

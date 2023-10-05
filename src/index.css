@@ -216,7 +216,7 @@ body{
 
 .hero-section{
     /* background-color: #0D1117; */
-    background-image: url(img/3drender2.webp);
+    background-image: url(https://coihsan.github.io/iseng/assets/3drender2.webp);
     background-size: cover;
     background-attachment: fixed;
     height: 100vh;

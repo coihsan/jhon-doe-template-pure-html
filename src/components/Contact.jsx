@@ -68,7 +68,6 @@ export default function Contact (){
                             <label for="message" className="user-lable">Message</label>
                        </div>
                        <input type="submit" value="Send" id="submitButton" className="transition"/>
-                       <button type="button">Submit</button>
                     </form>
                 </div>
             </div>
