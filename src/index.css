@@ -856,7 +856,7 @@ input::-webkit-inner-spin-button {
 }
 
 /* ================= START SETTING REVEAL ANIMATION STYLING ================= */
-
+/* 
 [data-reveal="toUp"]{
     position: relative;
     transform: translateY(50%);
@@ -875,7 +875,7 @@ input::-webkit-inner-spin-button {
 }
 [data-reveal="slide"].actives{
     width: 100%;
-}
+} */
 /* ================= END SETTING REVEAL ANIMATION STYLING ================= */
 
 
