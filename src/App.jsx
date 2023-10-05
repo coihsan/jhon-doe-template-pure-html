@@ -22,7 +22,8 @@ function App() {
       <Skills />
       <Resume />
       <Projects />
-      <Navbar />
+      <Contact />
+      <Footer />
     </>
   )
 }

@@ -2,7 +2,7 @@ export default function Skills (){
     return (
         <section className="skills-section section" id="Skills">
         <div className="skills-container container">
-            <div clclassNameass="section-title" data-reveal="toUp">
+            <div className="section-title" data-reveal="toUp">
                 <h3 className="title-section reveal">My <span>Skills</span></h3>
                 <p className="center reveal">All the skills that I have in that field of work are mentioned.</p>
             </div>
