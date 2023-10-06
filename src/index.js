@@ -3,50 +3,10 @@
 {
     // blockcode sidenav
   
-  const checkbox = document.getElementById('#toggle-menu');
-  const sidenav = document.querySelector('.navbar');
-  const overlay = document.querySelector('.navOverlay');
-  const slide = 'slide';
-  const active = 'active';
 
-  checkbox.addEventListener('change', () => {
-    if (checkbox.checked) {
-      sidenav.classList.add(slide);
-      overlay.classList.add(active);
-    } else {
-      sidenav.classList.remove(slide);
-      overlay.classList.remove(active);
-    }
-  });
-  
-  document.addEventListener('click', (event) => {
-    if (!event.target.closest('#toggle-menu')) {
-      checkbox.checked = false;
-      sidenav.classList.remove(slide);
-      overlay.classList.remove(active);
-    }
-  });
   // end blockcode sidenav
   }
   
-  // Greeting
-  
-  const times = new Date().getHours();
-  var greeting;
-  
-  if (times > 3 && times <= 10){
-    greeting = "Morning!"
-  }
-  else if (times >= 11 && times <= 14){
-    greeting = "Day!";
-  }
-  else if (times > 14 && times < 17){
-    greeting = "Afternoon!";
-  } else{
-    greeting = "Evening!";
-  }
-  
-    // document.getElementById('greeting').innerHTML = "Good " + greeting;
   
   // when user scroll and the header changing background color
   window.addEventListener("scroll", function() {
