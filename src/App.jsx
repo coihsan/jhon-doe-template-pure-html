@@ -1,7 +1,5 @@
 import { useState } from 'react'
 import * as React from "react";
-import { createRoot } from "react-dom/client";
-import { BrowserRouter } from "react-router-dom";
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import Aboutme from './components/Aboutme.jsx'
@@ -19,10 +17,6 @@ function App() {
 
   return (
     <>
-
-<BrowserRouter basename="/app">
-  <Routes>
-    <Route path="/">
       <Navbar />
       <Hero />
       <Aboutme />
@@ -31,23 +25,8 @@ function App() {
       <Projects />
       <Contact />
       <Footer />
-    </Route>
-  </Routes>
-</BrowserRouter>
-
     </>
   )
 }
 
 export default App
-<BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Layout />}>
-          <Navbar />
-          <Route index element={<Home />} />
-          <Route path="blogs" element={<Blogs />} />
-          <Route path="contact" element={<Contact />} />
-          <Route path="*" element={<NoPage />} />
-        </Route>
-      </Routes>
-    </BrowserRouter>

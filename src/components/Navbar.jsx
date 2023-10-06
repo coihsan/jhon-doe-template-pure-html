@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 export default function Navbar (){
     return (
         <header className="header flex">
-        <a href="#" className="logo">Jhon <span className="text-color">Doe</span></a>
+        <Link to={'/'} className="logo">Jhon <span className="text-color">Doe</span></Link>
         <div className="navOverlay"></div>
         <nav className="navbar flex">
             <div className="avatar">
@@ -11,13 +11,8 @@ export default function Navbar (){
                 <h2>Jhon <span className="text-color">Doe</span></h2>
             </div>
             <div className="navmenu flex" id="sideNav">
-                <a href="#">Home</a>
-                <a href="#Aboutme">Aboutme</a>
-                <a href="#Skills">Skills</a>
-                <a href="#Experience">Experience</a>
-                <a href="#Projects">Projects</a>
-                <a href="#Contact">Contact</a>
                 <Link to={'/Blog'}>Blog</Link>
+                <Link to={'/Index'}>Projects</Link>
                 <div className="social-link flex">
                     <a href=""><i className='bx bxl-instagram'></i></a>
                     <a href=""><i className='bx bxl-linkedin-square'></i></a>
