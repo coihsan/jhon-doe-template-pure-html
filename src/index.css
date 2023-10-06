@@ -978,6 +978,12 @@ input::-webkit-inner-spin-button {
         align-items: center;
     }
 }
+/* INDEX ARTICLE */
+.index-article{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
 @media only screen and (min-width: 600px){
     .progressbar-section{
         grid-template-columns: 1fr;
