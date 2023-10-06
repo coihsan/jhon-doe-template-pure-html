@@ -40,6 +40,34 @@ export default function Blog (){
           topic: "Meta Ads",
           url: "/posts/5",
         },
+        {
+          title: "How to Target Your Meta Ads",
+          description: "This article will teach you how to target your Meta Ads to reach the right people",
+          date: "22 Sept 2023",
+          topic: "Meta Ads",
+          url: "/posts/5",
+        },
+        {
+          title: "10 SEO Mistakes to Avoid",
+          description: "This article will help you avoid common SEO mistakes that can hurt your website's ranking",
+          date: "22 Sept 2023",
+          topic: "SEO",
+          url: "/posts/5",
+        },
+        {
+          title: "How to Use React Hooks",
+          description: "This article will teach you how to use React Hooks, a new feature in React 16.8",
+          date: "22 Sept 2023",
+          topic: "React",
+          url: "/posts/5",
+        },
+        {
+          title: "How to Track the Performance of Your Google Search Ads",
+          description: "This article will teach you how to track the performance of your Google Search Ads to see what's working and what's not",
+          date: "22 Sept 2023",
+          topic: "Google Ads",
+          url: "/posts/5",
+        },
       ];
     
     return (
@@ -57,7 +85,7 @@ export default function Blog (){
                         </div>
                         <h2 className='aticle-title-in-index'>{post.title}</h2>
                         <p className='aticle-desc-in-index'>{post.description}</p>
-                        <Link to={post.url}>Read more</Link>
+                        <Link className="link-readmore" to={post.url}>Read more</Link>
                     </li>
                 ))}
                 </ul>

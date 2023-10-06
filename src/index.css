@@ -991,6 +991,12 @@ input::-webkit-inner-spin-button {
    border-radius: 10px;
    color: var(--text-primary-color);
 }
+.list-item .link-readmore{
+    color: #F2F2F2;
+}
+.aticle-title-in-index{
+    color: var(--primary-color);
+}
 .aticle-desc-in-index{
     margin: 10px 0;
     color: var(--text-secondary-color)
