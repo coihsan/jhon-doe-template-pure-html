@@ -1011,7 +1011,7 @@ input::-webkit-inner-spin-button {
 .index-item-footer *{
     color: var(--text-secondary-color);
 }
-.topic-category{
+.footer-span{
     display: flex;
     align-items: center;
     gap: 5px;

@@ -3,29 +3,29 @@
 {
     // blockcode sidenav
   
-//   const checkbox = document.getElementById('#toggle-menu');
-//   const sidenav = document.querySelector('.navbar');
-//   const overlay = document.querySelector('.navOverlay');
-//   const slide = 'slide';
-//   const active = 'active';
+  const checkbox = document.getElementById('#toggle-menu');
+  const sidenav = document.querySelector('.navbar');
+  const overlay = document.querySelector('.navOverlay');
+  const slide = 'slide';
+  const active = 'active';
 
-//   checkbox.addEventListener('change', () => {
-//     if (checkbox.checked) {
-//       sidenav.classList.add(slide);
-//       overlay.classList.add(active);
-//     } else {
-//       sidenav.classList.remove(slide);
-//       overlay.classList.remove(active);
-//     }
-//   });
+  checkbox.addEventListener('change', () => {
+    if (checkbox.checked) {
+      sidenav.classList.add(slide);
+      overlay.classList.add(active);
+    } else {
+      sidenav.classList.remove(slide);
+      overlay.classList.remove(active);
+    }
+  });
   
-//   document.addEventListener('click', (event) => {
-//     if (!event.target.closest('#toggle-menu')) {
-//       checkbox.checked = false;
-//       sidenav.classList.remove(slide);
-//       overlay.classList.remove(active);
-//     }
-//   });
+  document.addEventListener('click', (event) => {
+    if (!event.target.closest('#toggle-menu')) {
+      checkbox.checked = false;
+      sidenav.classList.remove(slide);
+      overlay.classList.remove(active);
+    }
+  });
   // end blockcode sidenav
   }
   

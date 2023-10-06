@@ -3,6 +3,7 @@ import Navbar from '../components/Navbar.jsx'
 import Footer from '../components/Footer.jsx'
 import {Link} from 'react-router-dom'
 import Tag from '../assets/tag.svg'
+import Calender from '../assets/calender.svg'
 
 export default function Blog (){
     const posts = [
@@ -81,8 +82,8 @@ export default function Blog (){
                 {posts.map((post) => (
                     <li className='list-item' key={post.id}>
                         <div className='index-item-footer'>
-                            <span id='date-post'>{post.date}</span>
-                            <span className='topic-category'> <img src={Tag} alt="" /> {post.topic}</span>
+                            <span className="footer-span" id='date-post'><img src={Calender} alt="" />{post.date}</span>
+                            <span className='topic-category footer-span'> <img src={Tag} alt="" /> {post.topic}</span>
                         </div>
                         <h2 className='aticle-title-in-index'>{post.title}</h2>
                         <p className='aticle-desc-in-index'>{post.description}</p>
