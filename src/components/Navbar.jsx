@@ -46,20 +46,20 @@ function MenuToggle() {
 
 export default function Navbar() {
   return (
-    <header className=''="header flex">
+    <header className="header flex">
         <Link to={'/'} className="logo">Jhon <span className="text-color">Doe</span></Link>
         <div className="navOverlay"></div>
         <nav className="navbar flex">
             <div className="avatar">
-                <img src="img/1690805230779.jpg" alt="avatar"/>
+                <img src="https://coihsan.github.io/iseng/assets/1690805230779.webp" alt="avatar"/>
                 <h2>Jhon <span className="text-color">Doe</span></h2>
             </div>
             <div className="navmenu flex" id="sideNav">
-                <a href="#Projects">Projects</a>
-                <a href="#Contact">Contact</a>
+                <Link to={'/Blog'}>Blog</Link>
+                <Link to={'/Index'}>Projects</Link>
                 <div className="social-link flex">
                     <a href=""><i className='bx bxl-instagram'></i></a>
-                    <a href=""><i class='bx bxl-linkedin-square'></i></a>
+                    <a href=""><i className='bx bxl-linkedin-square'></i></a>
                     <a href=""><i className='bx bxl-facebook-circle'></i></a>
                 </div> 
             </div>
@@ -67,6 +67,7 @@ export default function Navbar() {
                 <p>@ All Rights Reserved to <strong>Jhon Doe</strong></p>
             </div> 
         </nav>
+        <MenuToggle/>
     </header>
   );
 }
