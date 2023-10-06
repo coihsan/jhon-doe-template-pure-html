@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from '../components/Navbar.jsx'
 import Footer from '../components/Footer.jsx'
 import {Link} from 'react-router-dom'
+import Tag from '../assets/tag.svg'
 
 export default function Blog (){
     const posts = [
@@ -59,7 +60,7 @@ export default function Blog (){
           description: "This article will teach you how to use React Hooks, a new feature in React 16.8",
           date: "22 Sept 2023",
           topic: "React",
-          url: "/posts/5",
+          url: "/posts/1",
         },
         {
           title: "How to Track the Performance of Your Google Search Ads",
@@ -75,13 +76,13 @@ export default function Blog (){
         <Navbar />
         <div className='section'>
             <div className='container'>
-                <h1>My Blog</h1>
+                <h3 className="title-section">My <span>Blog</span></h3>
                 <ul className='index-article'>
                 {posts.map((post) => (
                     <li className='list-item' key={post.id}>
                         <div className='index-item-footer'>
                             <span id='date-post'>{post.date}</span>
-                            <span className='topic-category'>{post.topic}</span>
+                            <span className='topic-category'> <img src={Tag} alt="" /> {post.topic}</span>
                         </div>
                         <h2 className='aticle-title-in-index'>{post.title}</h2>
                         <p className='aticle-desc-in-index'>{post.description}</p>
