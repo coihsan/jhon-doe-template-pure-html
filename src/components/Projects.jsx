@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import {Link} from 'react-router-dom'
 
 function Projects() {
   useEffect(() => {
@@ -10,7 +9,7 @@ function Projects() {
       x = document.getElementsByClassName("column");
       if (c === "all") c = "";
       for (i = 0; i < x.length; i++) {
-        addClass(x[i], "show");
+        removeClass(x[i], "show");
         if (x[i].className.indexOf(c) > -1) addClass(x[i], "show");
       }
     }
@@ -26,7 +25,7 @@ function Projects() {
       }
     }
 
-    function RemoveClass(element, name) {
+    function removeClass(element, name) {
       var i, arr1, arr2;
       arr1 = element.className.split(" ");
       arr2 = name.split(" ");
@@ -37,7 +36,7 @@ function Projects() {
       }
       element.className = arr1.join(" ");
     }
-  }, []); // Empty dependency array ensures this effect runs once on component mount
+  }, []);
 
   return (
     <div className="projects-section section" id="Projects">
@@ -80,33 +79,33 @@ function Projects() {
                   </div>        
                   <div className="column Sosmed">
                     <div className="content">
-                      <img src="https://coihsan.github.io/iseng/assets/1690805230779.webp" alt="Car" data-tab="img04"/>
+                      <img src="https://coihsan.github.io/iseng/assets/project-4.png" alt="Projects 4" data-tab="img04"/>
                     </div>
                   </div>
                   <div className="column Sosmed">
                     <div className="content">
-                    <img src="https://coihsan.github.io/iseng/assets/1690805230779.webp" alt="Car" data-tab="img05"/>
+                    <img src="https://coihsan.github.io/iseng/assets/project-5.png" alt="Projects 5" data-tab="img05"/>
                     </div>
                   </div>
                   <div className="column Sosmed">
                     <div className="content">
-                    <img src="https://coihsan.github.io/iseng/assets/1690805230779.webp" alt="Car" data-tab="img06"/>
+                    <img src="https://coihsan.github.io/iseng/assets/project-6.png" alt="Projects 6" data-tab="img06"/>
                     </div>
                   </div>
                 
                   <div className="column Design">
                     <div className="content">
-                      <img src="https://coihsan.github.io/iseng/assets/1690805230779.webp" alt="Car" data-tab="img07"/>
+                      <img src="https://coihsan.github.io/iseng/assets/project-7.png" alt="Projects 7" data-tab="img07"/>
                     </div>
                   </div>
                   <div className="column Design">
                     <div className="content">
-                    <img src="https://coihsan.github.io/iseng/assets/1690805230779.webp" alt="Car" data-tab="img08"/>
+                    <img src="https://coihsan.github.io/iseng/assets/project-8.jpg" alt="Projects 8" data-tab="img08"/>
                     </div>
                   </div>
                   <div className="column Design">
                     <div className="content">
-                    <img src="https://coihsan.github.io/iseng/assets/1690805230779.webp" alt="Car" data-tab="img09"/>
+                    <img src="https://coihsan.github.io/iseng/assets/project-9.png" alt="Projects 9" data-tab="img09"/>
                     </div>
                   </div>
                   {/* END GRID */}
