@@ -1,3 +1,5 @@
+import {Link} from 'react-router-dom'
+
 export default function Projects(){
     return(
         <div className="projects-section section" id="Projects">
@@ -11,6 +13,7 @@ export default function Projects(){
                   <button className="btn" onclick="filterSelection('Web')"> Web</button>
                   <button className="btn" onclick="filterSelection('Sosmed')"> Social Media</button>
                   <button className="btn" onclick="filterSelection('Design')"> Design</button>
+                  <Link className=' index-projects' to={'/Index'}>Index</Link>
                 </div>
                 
        
