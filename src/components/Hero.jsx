@@ -6,7 +6,7 @@ export default function Hero (){
             greeting = "Good Morning!"
         }
         else if (times >= 11 && times <= 14){
-            greeting = "Goog Day!";
+            greeting = "Good Day!";
         }
         else if (times > 14 && times < 17){
             greeting = "Good Afternoon!";
