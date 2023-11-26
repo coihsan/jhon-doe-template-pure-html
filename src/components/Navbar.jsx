@@ -47,7 +47,7 @@ function MenuToggle() {
 export default function Navbar() {
   return (
     <header className="header flex">
-        <Link to={'/'} className="logo">Jhon <span className="text-color">Doe</span></Link>
+        <Link to={'/jhon-doe-template-pure-html/'} className="logo">Jhon <span className="text-color">Doe</span></Link>
         <div className="navOverlay"></div>
         <nav className="navbar flex">
             <div className="avatar">

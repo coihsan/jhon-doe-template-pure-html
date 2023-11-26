@@ -15,7 +15,7 @@ import {
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/jhon-doe-template-pure-html/",
     element: <App />,
     errorElement: <ErrorPage />,
   },
